@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.tuna.bookmanager.fragment.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_book"
+        android:name="com.tuna.bookmanager.fragment.BookFragment"
+        android:label="@string/book"
+        tools:layout="@layout/fragment_book" />
+
+    <fragment
+        android:id="@+id/nav_typebook"
+        android:name="com.tuna.bookmanager.fragment.TypeBookFragment"
+        android:label="@string/typebook"
+        tools:layout="@layout/fragment_type_book" />
+
+    <fragment
+        android:id="@+id/nav_bill"
+        android:name="com.tuna.bookmanager.fragment.BillFragment"
+        android:label="@string/bill"
+        tools:layout="@layout/fragment_bill" />
+</navigation>
